@@ -1,0 +1,48 @@
+/* ============================================================================
+   Agrobiozone — Identidade visual canônica (reutilizável em qualquer ferramenta)
+   Fonte de verdade: pasta "3 Marketing (Artes e campanhas)/31 Logo e fontes da marca".
+   Como usar: copie brand/fonts -> static/brand/fonts e brand/logo -> static/brand,
+   ajuste os caminhos url() abaixo, e importe este arquivo (ou cole o :root).
+   ============================================================================ */
+
+:root {
+  /* Paleta oficial (PALETA-DE-CORES-AGROBIOZONE) */
+  --abz-cyan:        #00AFEF; /* Pantone Process Cyan C  — primária   */
+  --abz-verde-claro: #95C949; /* Pantone P 157-8 C       — secundária */
+  --abz-verde-medio: #54B952; /* Pantone P 151-8 C                    */
+  --abz-verde-escuro:#079D50; /* Pantone P 145-16 C      — destaque   */
+
+  /* Neutros derivados (apoio para UI clara) */
+  --abz-tinta:   #0f2e22; /* texto escuro com leve viés verde         */
+  --abz-tinta-2: #5b7268; /* texto secundário / labels                */
+  --abz-linha:   #e3eae6; /* bordas / separadores                     */
+  --abz-fundo:   #f5f8f6; /* fundo de página                          */
+  --abz-card:    #ffffff; /* cartões                                  */
+
+  /* Gradiente da marca (cyan -> verde, como no wordmark) */
+  --abz-gradiente: linear-gradient(90deg, var(--abz-cyan) 0%, var(--abz-verde-medio) 55%, var(--abz-verde-escuro) 100%);
+
+  /* Tipografia da marca */
+  --abz-font-titulo: "HeadingNow", system-ui, Arial, sans-serif; /* títulos / wordmark / números fortes */
+  --abz-font-texto:  "HeadingPro", system-ui, Arial, sans-serif; /* corpo / labels                      */
+}
+
+/* HeadingNow — títulos e números (Bold + Extrabold) */
+@font-face {
+  font-family: "HeadingNow"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/HeadingNow-56Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HeadingNow"; font-style: normal; font-weight: 800; font-display: swap;
+  src: url("fonts/HeadingNow-57Extrabold.ttf") format("truetype");
+}
+
+/* HeadingPro — corpo de texto (Regular + Bold) */
+@font-face {
+  font-family: "HeadingPro"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/HeadingPro-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HeadingPro"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/HeadingPro-Bold.ttf") format("truetype");
+}
