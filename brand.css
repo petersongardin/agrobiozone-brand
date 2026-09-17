@@ -27,7 +27,22 @@
   --abz-font-texto:  "HeadingPro", system-ui, Arial, sans-serif; /* corpo / labels                      */
 }
 
-/* HeadingNow — títulos e números (Bold + Extrabold) */
+/* ----------------------------------------------------------------------------
+   FONTES — leia antes de descomentar
+
+   HeadingNow e HeadingPro são COMERCIAIS e não podem ser redistribuídas neste
+   repositório público. Por isso os @font-face abaixo vêm COMENTADOS: se ficassem
+   ativos, todo projeto que importa este CSS pelo CDN pediria 4 arquivos que não
+   existem aqui e tomaria 404 em cada um.
+
+   Sem eles, --abz-font-titulo/--abz-font-texto caem no fallback (system-ui) —
+   o layout continua correto, só a tipografia não é a da marca.
+
+   QUEM TEM A LICENÇA: copie os .ttf para uma pasta fonts/ ao lado de uma cópia
+   local deste arquivo e descomente o bloco.
+   ---------------------------------------------------------------------------- */
+
+/*
 @font-face {
   font-family: "HeadingNow"; font-style: normal; font-weight: 700; font-display: swap;
   src: url("fonts/HeadingNow-56Bold.ttf") format("truetype");
@@ -36,8 +51,6 @@
   font-family: "HeadingNow"; font-style: normal; font-weight: 800; font-display: swap;
   src: url("fonts/HeadingNow-57Extrabold.ttf") format("truetype");
 }
-
-/* HeadingPro — corpo de texto (Regular + Bold) */
 @font-face {
   font-family: "HeadingPro"; font-style: normal; font-weight: 400; font-display: swap;
   src: url("fonts/HeadingPro-Regular.ttf") format("truetype");
@@ -46,3 +59,4 @@
   font-family: "HeadingPro"; font-style: normal; font-weight: 700; font-display: swap;
   src: url("fonts/HeadingPro-Bold.ttf") format("truetype");
 }
+*/
